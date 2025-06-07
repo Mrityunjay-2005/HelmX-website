@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helmx - Smart Helmet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Hover effect for navigation buttons */
+        .nav-link:hover {
+            color: #ff9900 !important;
+            text-decoration: underline;
+        }
+
+        /* Hover effect for feature cards */
+        .feature-card:hover {
+            transform: scale(1.05); /* Slight zoom effect */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow */
+            cursor: pointer; /* Ensures pointer cursor */
+        }
+
+        /* Custom style for nav items */
+        .nav-link {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with navigation bar -->
+    <header style="background-color: black; color: white;" class="py-3">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+                <img src="images/logo.jpg" alt="Helmx Logo" class="logo">
+            </div>
+            <!-- Navigation bar -->
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#home" style="cursor: pointer;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#features" style="cursor: pointer;">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#about" style="cursor: pointer;">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#contact" style="cursor: pointer;">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-center text-light d-flex flex-column justify-content-center align-items-center" 
+             style="background-image: url('images/hero.jpg'); background-size: cover; background-position: center; height: 100vh; padding-top: 10%;">
+        <div class="mt-4" style="transform: translateY(-20%);">
+            <h2 style="font-size: 3.5rem;">Smart Helmet with Advanced Features</h2>
+            <p style="font-size: 1.5rem;">Experience safety, convenience, and technology with Helmx.</p>
+            <a href="#features" class="btn btn-primary mt-3" style="cursor: pointer; font-size: 1.2rem;">Learn More</a>
+            <a href="#buy-now" class="btn btn-outline-light mt-3" style="cursor: pointer; font-size: 1.2rem;">Buy Now</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Features</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="card shadow-sm p-3 feature-card" style="cursor: pointer;">
+                        <img src="images/gps.jpg" alt="Feature Image" class="img-fluid mb-3" style="width: 70px;">
+                        <h3>GPS Navigation</h3>
+                        <p>Seamlessly navigate your route with built-in GPS.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm p-3 feature-card" style="cursor: pointer;">
+                        <img src="images/bluetooth.jpg" alt="Feature Image" class="img-fluid mb-3" style="width: 80px;">
+                        <h3>Bluetooth Connectivity</h3>
+                        <p>Stay connected with hands-free calling and music.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm p-3 feature-card" style="cursor: pointer;">
+                        <img src="images/fall.png" alt="Feature Image" class="img-fluid mb-3" style="width: 70px;">
+                        <h3>Fall Detection</h3>
+                        <p>Automatic alerts to ensure your safety in case of falls.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container text-center">
+            <h2>About Helmx</h2>
+            <p>Helmx is a revolutionary smart helmet designed to enhance your riding experience with advanced safety features, connectivity, and comfort.</p>
+        </div>
+    </section>
+
+    <!-- Buy Now Section -->
+    <section id="buy-now" class="py-5">
+        <div class="container text-center">
+            <h2>Buy Helmx Today!</h2>
+            <img src="images/helmx.jpg" alt="Helmx Product" class="img-fluid my-4">
+            <p>Don’t miss out on the ultimate smart helmet experience. Order now!</p>
+            <p style="font-size: 1.8rem; font-weight: bold;">Price: ₹4000</p>
+            <a href="#contact" class="btn btn-success mt-3" style="cursor: pointer;">Buy Now</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-dark text-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-light py-3">
+        <p>&copy; 2025 Helmx. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
